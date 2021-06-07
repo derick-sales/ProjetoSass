@@ -1,0 +1,25 @@
+@mixin borda-arredondada($raio: 10px){
+    -webkit-border-radius: $raio;
+    -moz-border-radius: $raio;
+    -ms-border-radius: $raio;
+    -o-border-radius: $raio;
+    border-radius: $raio;
+  }
+  @mixin image-replacement{
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+  }
+  @mixin sombra-padrao{
+    -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  }
+  @mixin retorna-largura($multiplicador){
+    width: $multiplicador * $tfp;
+  }
+
+  ////////////////////////////////////
+
+  @import "compass/css3";
+
+  @import "compass/utilities";
